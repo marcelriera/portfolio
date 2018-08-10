@@ -40,6 +40,7 @@ function manageJQuery() {
       case '/projects/dungeon.html': $('#li_dungeon').addClass('on'); break;
       case '/projects/snake.html': $('#li_snake').addClass('on'); break;
       case '/projects/tree.html': $('#li_tree').addClass('on'); break;
+      case '/projects/logic.html': $('#li_logic').addClass('on'); break;
     }
     // Sidebar hiding animation
     $('aside#project_sidebar').hover(function() {
