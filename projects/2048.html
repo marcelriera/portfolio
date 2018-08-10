@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Website | Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Sample HTML/CSS website">
+    <meta name="keywords" content="HTML, CSS, HTML/CSS website">
+    <meta name="author" content="Marcel Riera">
+    <link rel='icon' href='../load/img/queen.png'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/script.js"></script>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header id='main_header'></header>
+
+    <section id="news">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." id="news_email">
+          <button type="submit" class="button_1" id="news_button">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <aside id="project_sidebar"></aside>
+
+    <div class='container'>
+      <article id="projects">
+        <div id="project_item">
+          <h2>2048 Game A.I. Solve Algorithm</h2>
+          <p>2048 is a single-player sliding block puzzle game designed by Italian web developer
+            Gabriele Cirulli. The game's objective is to slide numbered tiles on a grid to combine
+            them to create a tile with the number 2048. However, one can continue to play the game
+            after reaching the goal, creating tiles with larger numbers.</p>
+          <p>The purpose of developing this project was to practice Object Oriented Programming in Java,
+            get more familiarized with the Swing architecture, practice KeyBoard event input, and work
+            on algorithm development.
+            Mainly, the motivation behind recreating this classic game was to attempt to build an A.I.
+            algorithm that could reach higher scores than what is humanly capable.</p>
+          <p>For this project, the user inteface design was based on the Queens project. It contains
+            two modes; default gameplay and A.I. The default gameplay is the regular game, with same
+            mechanics as the original. The A.I. mode allows the computer to start solving the game by
+            itself.</b>
+          <p>The application also implements a save/load feature, allowing the user to continue their
+            gameplay after closing the application, plus remembering achieved highscores from past
+            sessions. The user can also hover over the highscores to see the final arrangement of the
+            board in that particular gameplay.</p>
+        </div>
+        <div id='project_side' class='grayAnim'>
+          <h3>2048 Game App</h2>
+          <img src='/load/img/2048.png'>
+          <ul>
+            <li>Java</li>
+            <li>Object Oriented Programming</li>
+            <li>Swing Architecture</li>
+            <li>A.I. Algorithm</li>
+          </ul>
+          <div class='download'>
+            <h3>Download</h3>
+            <ul>
+              <li><a href='/load/download/2048.jar' download>Jar Executable</a></li>
+              <li><a href='/load/download/2048.rar' download>Source Code</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <footer>
+      <p>Riera Web Design, Copyright &copy 2018</p>
+    </footer>
+
+  </body>
+</html>

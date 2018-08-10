@@ -1,0 +1,18 @@
+    public boolean recursiveSolve(int x, int y) {
+        if (y>7)
+	    return true;
+        if (x>7)
+            return false;
+        
+        if (isPositionValid(x,y)) {
+            queens.add(y, new Queen(x,y));
+            if (recursiveSolve(0,y+1) == false){
+                queens.remove(y);
+                return recursiveSolve(x+1, y);
+            }
+            else 
+		return true;
+        }
+        else 
+            return recursiveSolve(x+1, y);
+    }

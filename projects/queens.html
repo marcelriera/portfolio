@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Website | Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Sample HTML/CSS website">
+    <meta name="keywords" content="HTML, CSS, HTML/CSS website">
+    <meta name="author" content="Marcel Riera">
+    <link rel='icon' href='../load/img/queen.png'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script src="/load/libraries/prism.js"></script>
+        <link href="/load/libraries/prism.css" type="text/css" rel="stylesheet">
+
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <script src="../js/script.js"></script>
+  </head>
+
+  <body>
+
+    <header id='main_header'></header>
+
+    <section id="news">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." id="news_email">
+          <button type="submit" class="button_1" id="news_button">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <aside id="project_sidebar"></aside>
+
+    <div class="container">
+      <article id="projects">
+        <div id="project_item">
+          <h2>Eight Queens Recursive Algorithm</h2>
+          <p>The eight queens problem is a well known algorithm challenge. The objective
+            of the problem is to place eight queens in an 8x8 chessboard in such a way
+            that no two queens treat each other.</p>
+          <p>This program was developed in Java language, while using Swing architecture
+            to provide a graphical interface. The program generates all possible solutions
+            to the eight queens problem, showing each of them in the UI board.
+            The program has two different modes of operation; regular and fundamental.
+            In the regular mode the algorithm counts all solutions as valid, for a total
+            of 93 in the 8x8 board. In the other hand, fundamental mode shows solutions
+            if and only if they are not axial translations from other solutions, hence
+            counting 13 in total.</p>
+          <p>The heart of this project is the recursive method that solves a board. The
+            algorithm keeps calling himself until it finds a valid solution. The amount
+            of recursions made by the algorithm for every solution can be seen in the steps
+            field at the bottom right corner of the UI.</p>
+          <pre><code data-src="/load/code/queens.txt" class='prism language-java'></code></pre>
+          <p>Another important peace of the problem is to find fundamental solutions.
+            The way the program handles this task is by the use of a Set for all solutions; each
+            time a new solution is found, a method rotates the board three times and adds each
+            case to the solutions set. Then, another method takes the same solution and finds
+            its symmetric copy, adding it to the set. Finally, the program considers a solution
+            fundamental if and only if its not currently on the solution's set.</p>
+          <pre><code data-src="/load/code/queens2.txt" class='prism language-java'></code></pre>
+        </div>
+        <div id='project_side' class='grayAnim'>
+          <h3>Queens App</h3>
+          <img src='/load/img/queens.png'>
+          <ul>
+            <li>Java</li>
+            <li>Object Oriented Programming</li>
+            <li>Swing Architecture</li>
+            <li>Recursion</li>
+          </ul>
+          <div class='download'>
+            <h3>Download</h3>
+            <ul>
+              <li><a href='/load/download/queens.jar' download>Jar Executable</a></li>
+              <li><a href='/load/download/queens.rar' download>Source Code</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <footer>
+      <p>Riera Web Design, Copyright &copy 2018</p>
+    </footer>
+
+  </body>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Website | Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Sample HTML/CSS website">
+    <meta name="keywords" content="HTML, CSS, HTML/CSS website">
+    <meta name="author" content="Marcel Riera">
+    <link rel='icon' href='../load/img/queen.png'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+    <script src="../js/script.js"></script>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body onload='loaded()'>
+
+    <div id='loading_anim'></div>
+
+    <header id='main_header'></header>
+
+    <section id="news">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." id="news_email">
+          <button type="submit" class="button_1" id="news_button">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <aside id="project_sidebar"></aside>
+
+    <form id='tree_p5_form' class='loaded'>
+      Thickness <input type='range' min='1' max='15' value='7' class='slider' id='thickness'>
+      Randomness <input type='range' min='0' max='40' value='32' class='slider' id='randomness'>
+      Spread <input type='range' min='0' max='70' value='30' class='slider' id='spread'>
+      <input type='button' value='Generate' onclick='setup()'>
+      <p id='iterations'></p>
+    </form>
+
+    <div id='tree_p5' class='loaded'></div>
+    <script src='/js/tree/main.js'></script>
+
+    <section id="projects" style='display: none'>
+      <div class="container" id="project_item">
+        <h2>Tree Recursion in Javascript</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget eleifend dui, sed rutrum mi. Nullam pulvinar nunc gravida est bibendum placerat. Etiam sollicitudin nec arcu ac dictum. Praesent nulla magna, aliquam eget auctor a, pulvinar non turpis. Vestibulum dictum ex vel nibh rhoncus, et pretium purus ultricies. Fusce consequat nibh augue, eget auctor purus tempus id. Praesent vulputate ante sed ullamcorper sagittis. Ut dignissim vehicula arcu, eget tempus tortor. Nullam faucibus convallis nulla, at efficitur velit dignissim ac. Integer id nibh faucibus, pellentesque elit in, bibendum lectus. Morbi quis auctor metus, ac aliquet urna. Donec aliquet magna a feugiat pretium. Aliquam molestie mollis risus. Sed placerat, leo vel gravida volutpat, ligula tortor convallis diam, eget facilisis arcu mi in lectus. Aliquam scelerisque massa et neque vulputate varius.</p>
+        <p>Cras ut congue ex. Donec sit amet tellus feugiat dolor varius convallis iaculis a sem. Etiam lobortis quis nisl eget tristique. Sed in congue nibh. Nam commodo pharetra porttitor. Maecenas non orci et ligula cursus fermentum sit amet eu tortor. Donec iaculis ligula urna, vitae dapibus nulla sodales vel. Praesent dignissim vitae ipsum sit amet aliquet. Sed et urna turpis. Pellentesque quis lacus augue. Duis placerat pharetra justo quis lobortis. Sed non imperdiet sapien, et dapibus lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Riera Web Design, Copyright &copy 2018</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Website | Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Sample HTML/CSS website">
+    <meta name="keywords" content="HTML, CSS, HTML/CSS website">
+    <meta name="author" content="Marcel Riera">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/tree/p5.dom.js"></script>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <h1><span class="highlight">HTML & CSS</span> Website Design</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="on">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="news">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." id="news_email">
+          <button type="submit" class="button_1" id="news_button">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <div id='tree_p5'></div>
+    <script src="./js/tree3d/main.js"></script>
+
+    <footer>
+      <p>Riera Web Design, Copyright &copy 2018</p>
+    </footer>
+
+  </body>
+</html>

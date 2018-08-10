@@ -1,0 +1,41 @@
+    private Solution rotate(Solution solution) {
+        Queen[] array = new Queen[8];
+        for (Queen q : solution) {
+            int absX = q.x-4;
+            int absY = q.y-4;
+            array[(-absX)+3] = new Queen(absY+4, (-absX)+3);
+        }
+        return new Solution(Arrays.asList(array));
+    }
+    
+	
+    private Solution reflect(Solution solution) {
+        ArrayList<Queen> output = new ArrayList<>();
+        Queen[] array = new Queen[8];
+        for (Queen q : solution) {
+            int absX = q.x-4;
+            int absY = q.y-4;
+            array[absY+4] = new Queen((-absX)+3, absY+4);
+        }
+        return new Solution(Arrays.asList(array));
+    }
+	
+	
+    private void addSolutionAndEquivalences() {
+        previousSolutions.add(queens);
+        previousSolutions.add(rotate(queens));
+        previousSolutions.add(rotate(rotate(queens)));
+        previousSolutions.add(rotate(rotate(rotate(queens))));
+        
+        Solution reflection = reflect(queens);
+        
+        previousSolutions.add(reflection);
+        previousSolutions.add(rotate(reflection));
+        previousSolutions.add(rotate(rotate(reflection)));
+        previousSolutions.add(rotate(rotate(rotate(reflection))));
+    }
+	
+	
+    private boolean isSolutionFundamental() {
+        return !previousSolutions.contains(queens);
+    }
