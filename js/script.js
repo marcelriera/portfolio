@@ -1,7 +1,7 @@
 
 $(document).ready(manageJQuery);
 
-var root = window.location.protocol + "//" + window.location.host + "/site/" ;
+var root = window.location.protocol + "//" + window.location.host + "/" ;
 
 /* JQuery */
 
