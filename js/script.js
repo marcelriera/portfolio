@@ -103,7 +103,7 @@ function manageJQuery() {
 
   // Highlight code syntax
   $(document).ajaxComplete(function() {
-    Prism.highlightAll();
+      Prism.highlightAll();
   });
 
 }
