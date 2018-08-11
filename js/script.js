@@ -36,6 +36,7 @@ function manageJQuery() {
     switch (window.location.pathname) {
       case '/projects/queens.html': $('#li_queens').addClass('on'); break;
       case '/projects/2048.html': $('#li_2048').addClass('on'); break;
+      case '/projects/platform.html': $('#li_platform').addClass('on'); break;
       case '/projects/battleships.html': $('#li_battle').addClass('on'); break;
       case '/projects/dungeon.html': $('#li_dungeon').addClass('on'); break;
       case '/projects/snake.html': $('#li_snake').addClass('on'); break;

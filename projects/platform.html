@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Website | Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Sample HTML/CSS website">
+    <meta name="keywords" content="HTML, CSS, HTML/CSS website">
+    <meta name="author" content="Marcel Riera">
+    <link rel='icon' href='../load/img/queen.png'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/script.js"></script>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header id='main_header'></header>
+
+    <section id="news">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." id="news_email">
+          <button type="submit" class="button_1" id="news_button">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <aside id="project_sidebar"></aside>
+
+    <div class='container'>
+      <article id="projects">
+        <div id="project_item">
+          <h2>2D-Platformer on Android</h2>
+          <embed class='video' src="https://www.youtube.com/v/6WIKqc7xDGQ"></embed>
+          <p>This project was my first attempt to work on mobile app development. The program runs on android devices, and I also included a desktop Java version with a level editor. Working on this game turned out to be very challenging, as I wanted to avoid using any external libraries to handle mechanics in order to learn. The main features include tile-based graphics, imageHandler class, program auto reshapes to fit any mobile screen size, a text-to-graphics level editor which contains 3 layers of information per tile, a collision detection mechanism, manual sprite animation, responsive screen scrolling, object oriented entities, mini physics engine and multi-thread processing for loading the content. The main engine of this project is done, as with the text base level editor, additional content can be implemented without the need of additional code.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed velit felis. Aenean varius nisi libero, vitae scelerisque velit sodales in. Duis mattis magna ut congue hendrerit. Nulla velit magna, posuere eget turpis vitae, porttitor tempus turpis. Sed condimentum ipsum pretium nibh dictum, vitae mattis ipsum pellentesque. Vivamus diam purus, fermentum vel aliquam sit amet, vulputate non est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi nec condimentum nulla. Etiam consequat orci non rhoncus consectetur. Phasellus justo nibh, pulvinar placerat sagittis et, semper ac ante. Integer eget sodales mauris.</p>
+          <p>Sed bibendum at sapien pretium blandit. Suspendisse sed molestie justo. Vestibulum feugiat, dui vel sodales blandit, eros ex auctor turpis, sed bibendum tellus tortor vel eros. In ornare vitae velit non suscipit. Fusce lobortis elementum congue. Praesent convallis tortor nec tellus imperdiet consectetur. Nullam feugiat viverra eros, nec fermentum risus faucibus tincidunt. Duis a iaculis purus. Etiam venenatis eros tellus, at dapibus augue fringilla eu. Donec suscipit justo sit amet interdum molestie. Integer eget orci a mi mollis facilisis id eget enim. Aenean id augue sem. Curabitur sagittis scelerisque nisl et pharetra. Nunc ullamcorper ex a eros sodales egestas.</p>
+          <p>Phasellus eget dolor nec velit iaculis molestie. Donec porttitor vitae leo in dignissim. Cras ex ex, condimentum ac tellus in, convallis sollicitudin felis. Nam mi orci, pharetra et erat non, tristique malesuada odio. Cras ornare turpis quis tortor ultrices, a lobortis arcu elementum. Praesent non faucibus erat. Sed malesuada augue eu sapien lacinia dignissim. In scelerisque dui ut magna auctor, non egestas sapien tincidunt. Sed tempus, lorem vitae finibus suscipit, quam est venenatis magna, a mollis ipsum nunc a est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla id molestie sem. Morbi tincidunt tellus mollis sapien posuere rutrum. Maecenas fermentum, enim ac elementum porttitor, dui arcu posuere augue, in ornare turpis arcu at magna. Sed ut risus gravida, egestas urna et, laoreet purus.</p>
+        </div>
+        <div id='project_side' class='grayAnim'>
+          <h3>2D-Platformer App</h2>
+          <img src='/load/img/platform.png'>
+          <ul>
+            <li>Android</li>
+            <li>Java</li>
+            <li>Object Oriented Programming</li>
+            <li>Graphics</li>
+            <li>Multi-threading</li>
+            <li>Physics Engine</li>
+            <li>Sprite Animation</li>
+          </ul>
+          <div class='download'>
+            <h3>Download</h3>
+            <ul>
+              <li><a href='/load/download/logic.jar' download>Jar Executable</a></li>
+              <li><a href='/load/download/logic.rar' download>Source Code</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <footer>
+      <p>Riera Web Design, Copyright &copy 2018</p>
+    </footer>
+
+  </body>
+</html>
