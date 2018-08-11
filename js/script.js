@@ -103,6 +103,7 @@ function manageJQuery() {
 
   // Highlight code syntax
   $(document).ajaxComplete(function() {
+    if (window.location.pathname === '/projects/queens.html')
       Prism.highlightAll();
   });
 
