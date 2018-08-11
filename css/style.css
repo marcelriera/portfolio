@@ -226,7 +226,7 @@ footer {
   margin-top: 30px;
 }
 
-#projects #project_item {
+#project_item {
   float: left;
   width: 55%;
   padding: 20px 60px 40px 60px;
@@ -267,7 +267,7 @@ footer {
   height: 292px;
 }
 
-#projects #project_side {
+#project_side {
   float: right;
   box-sizing: border-box;
   padding: 20px 30px 60px 30px;
@@ -503,6 +503,24 @@ footer {
   #about_main, #about_side {
     float: none;
     width: 100%;
+  }
+
+  #project_sidebar {
+    display: none;
+  }
+
+  #project_item, #project_side {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  #project_item {
+    background: none;
+  }
+
+  #project_side {
+    padding: 10px;
   }
 
 }
